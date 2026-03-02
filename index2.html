@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> プラティクシャの プロフィール</title>
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="main-wrapper">
+        
+        <nav class="nav-bar">
+           <button class="tab" data-tab="profile">ぷろふぃーる</button>
+           <button class="tab" data-tab="goal-list">げんざいのもくひょう</button>
+           <button class="tab" data-tab="routine">にっか</button>
+           <button class="tab" data-tab="skills">すきる</button>
+           <button class="tab" data-tab="hobbies">しゅみ</button>
+           <button class="tab" data-tab="culture">ぶんか</button>
+           <button class="tab" data-tab="web">ウェブサイト</button>
+           <button class="tab" data-tab="japan">ばしょ</button>
+           <button class="tab" data-tab="contactSec">おといあわせ</button>
+           
+           
+
+        </nav>
+
+        <header id="profile" class="profile-card tab-section">
+            <div class="photo-area">
+                <img src="profile.jpg" alt="profile" class="profile-photo">
+            </div>
+            <div class="profile-info">
+                <span class="badge">しすてむ えんじにあ</span>
+                <h1 id="greetMessage">こんにちは!</h1>
+                <p class="intro-text">
+                    はじめまして。わたしは <strong>プラティクシャ</strong> です。 インド から きました。<br>
+                    いまは <strong>もとす</strong> に すんでいます。にほんのような すばらしい くにに すめて とても しあわせです。<br>
+                    あたらしい ことを まなぶのが だいすきで、いつも わくわく しています！
+                    
+                   
+
+                    <button id="greetBtn">あいさつ</button>
+                    <div id="box">
+                      <h2 id="message"></h2>
+                    </div>
+
+
+
+                </p>
+            </div>
+        </header>
+
+        <section id="goal-list" class="info-section blue-bg tab-section">
+            <h2><i class="fa-solid fa-rocket"></i>げんざいのもくひょう</h2>
+            <ul class="goal-list">
+                <li>にほんごを べんきょうすること</li>
+                <li>うぇぶ かいたくを ますたー すること</li>
+                <li>もりまつ の しすてむを りかいすること</li>
+            </ul>
+        </section>
+
+       <section id="routine" class="info-section tab-section">
+            <h2><i class="fa-solid fa-clock"></i> いちにちの ながれ</h2>
+            <div class="routine-grid">
+                <p><strong>08:30:</strong> しゅっしゃ (Office Arrival)</p>
+                <p><strong>08:30 - 10:00:</strong> にほんごの くらす</p>
+                <p><strong>10:00 - 12:00:</strong> こーでぃんぐの れんしゅう</p>
+                <p><strong>13:00 - 17:30:</strong> にほんごの たんごと こーでぃんぐの べんきょう</p>
+            </div>
+        </section>
+
+        <section id="skills" class="info-section tab-section">
+            <h2><i class="fa-solid fa-code"></i> スキル</h2>
+            <p>HTMLとCSSとJavaScript が とくいです。</p>
+            <div class="skill-container">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript </span>
+            </div>
+        </section>
+
+        <section id="hobbies" class="info-section peach-bg tab-section">
+            <h2><i class="fa-solid fa-star"></i> だいすきな こと</h2>
+            <ul class="hobby-list">
+                <li><strong>まなぶこと:</strong> いまは にほんごを まなぶのが とても たのしいです！</li>
+                <li><strong>りょうり:</strong> スパイスを つかった りょうりが とくいです。</li>
+                <li><strong>りょこう:</strong> あたらしい けしきを みるのが だいすきです。</li>
+                <li><strong>おんがく:</strong> リラックスする ために おんがくを ききます。</li>
+            </ul>
+        </section>
+
+        <section id="culture" class="info-section pink-bg tab-section">
+            <h2><i class="fa-solid fa-seedling"></i> にほんの ぶんか</h2>
+            <p>しごと だけでなく、にほんの ぶんか、しきたり、るーる、しょくしゅうかん、そして きりつ を まなびたいです。</p>
+            <p>にほんから まなぶべきことが たくさん あります。きりつのある すばらしい くにで はたらけて とても しあわせです。</p>
+        </section>
+
+        <section id="web" class="info-section tab-section">
+            <h2><i class="fa-solid fa-globe"></i> おきにいりの さいと</h2>
+            <div class="web-grid">
+                <a href="https://en.wikipedia.org/wiki/Maasai_Mara" target="_blank" class="web-card">
+                    <img src="wildlife.jpg" alt="wildlife">
+                    <p>まさいまら</p>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Wonders_of_the_World" target="_blank" class="web-card">
+                    <img src="7Wonders.webp" alt="wonders">
+                    <p>せかいの しちふしぎ</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="japan" class="info-section pink-bg tab-section">
+            <h2><i class="fa-solid fa-map"></i> にほんで いきたい ところ</h2>
+            <div class="japan-grid">
+                <div class="place-item"><img src="kyoto1.jpg" alt="kyoto" onclick="showImage(this)"><p>きょうと</p></div>
+                <div class="place-item"><img src="fuji.jpg" alt="fuji" onclick="showImage(this)"><p>ふじさん</p></div>
+                <div class="place-item"><img src="hokkaido.jpg" alt="hokkaido" onclick="showImage(this)"><p>ほっかいどう</p></div>
+                
+                <div id="largeImageContainer"><img id="largeImage" src=""></div>
+            </div>
+        </section>
+
+
+
+
+
+
+    <section id="contactSec" class="info-section tab-section">
+    <h2 id="contactHead">
+        <i class="fa-solid fa-envelope"></i> おといあわせ ふぉーむ
+    </h2>
+
+    <div class="lang-switch" style="margin-bottom:10px;">
+    <button type="button" class="lang-btn" onclick="changeLang('jp')">日本語</button>
+    <button type="button" class="lang-btn" onclick="changeLang('en')">ENG</button>
+    </div>
+
+    <form id="form1">
+        <label id="n1">なまえ</label>
+        <input type="text" id="name1" required>
+
+        <label id="e1">メール</label>
+        <input type="email" id="email1" required>
+
+        <label id="m1">メッセージ</label>
+        <textarea id="msg1" rows="4"></textarea>
+
+        <button type="button" id="transBtn">ほんやく</button>
+        <button type="button" id="resetBtn">りせっと</button>
+        <button type="submit" id="subBtn">そうしん</button>
+        
+    </form>
+
+    <div id="showTranslate" style="margin-top:10px;"></div>
+    </section>
+
+
+
+    <footer class="footer">
+        <p>&copy; 2026 ぷらてぃくしゃ</p>
+    </footer>
+
+        
+</div>
+<script src="index2.js"></script>
+
+</body>
+</html>
